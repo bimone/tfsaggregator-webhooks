@@ -3,9 +3,6 @@
 namespace Aggregator.WebHooks.Models
 {
     using System;
-    using System.Collections.Generic;
-    using System.Linq;
-    using System.Web;
     using Aggregator.Core.Interfaces;
     using Newtonsoft.Json.Linq;
 

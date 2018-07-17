@@ -5,18 +5,67 @@
     <rateLimiting interval="00:00:01.0" changes="5" />
     <logging level="Diagnostic" />
     <script language="C#" />
-    <!--
-    <authentication username="**DOMAIN**\**user**" password="***" />
-    <authentication personalToken="**put-personal-token-here**" />
-    -->
+
+    <authentication personalToken="24j57xeqoirljarypqlts3oj7lh5pgcceh6ay7zdd2tct3zxmb4q" />
   </runtime>
 
-  <rule name="HelloWorldRule" hasFields="Title"><![CDATA[
-        logger.Log("Hello '{2}', World from {1} #{0}!", self.Id, self.TypeName, self["System.Title"]);
-  ]]></rule>
+  <rule name="SetUserStoryParentRule" appliesTo="User Story"><![CDATA[
+  
+        logger.Log("Self ID : s{0}", self["ID"]);
+        logger.Log("Self TYPE : s{0}", self.TypeName);
+        logger.Log("Parent ID : {0}", parent["ID"]);
+          string parentTitle = "";
+           if(self.HasParent())
+           {
+                var parent = self.Parent;
+                parentTitle = parent["ID"] + " - " + parent["Title"];
+                logger.Log("Parent ID : {0}", parent["ID"]);
+                
+                var totalEffort = 0;
+                
+                 foreach(var child in self.Parent.Children.Where(child => child.TypeName == "User Story"))
+                 {
+                 var pointsField = child["Story Points"];
+                   
+                   
+                   if(pointsField != null)
+                   {
+                        
+                        int points;
+                        if(int.TryParse(pointsField.ToString(), out points))
+                        {
+                            totalEffort += points;
+                        }
+                    }
+                }
+                
+                if(parent["Total Story Points"] != null)
+                {
+                    parent["Total Story Points"] = totalEffort;
+                }
+                self["Parent Name"] = parentTitle;
+           }
+  ]]></rule>           
+  <rule name="SetParentAsActiveIsChildActive" appliesTo="Bug"><![CDATA[
+        logger.Log("Self ID : s{0}", self["ID"]);
+        logger.Log("Self TYPE : s{0}", self.TypeName);
+        logger.Log("Parent ID : {0}", parent["ID"]);
+           if(self.HasParent())
+           {
+                var parent = self.Parent;
+                logger.Log("Self ID : s{0}", self["ID"]);
+                logger.Log("Self TYPE : s{0}", self.TypeName);
+                logger.Log("Parent ID : {0}", parent["ID"]);
+                
+                
+           }
+
+ ]]></rule>
+
 
   <policy name="AlwaysRunPolicy">
-    <ruleRef name="HelloWorldRule" />
+    <ruleRef name="SetUserStoryParentRule" />
+    <ruleRef name="SetParentAsActiveIsChildActive" />
   </policy>
 
 </AggregatorConfiguration>
