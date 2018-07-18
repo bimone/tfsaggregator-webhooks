@@ -26,7 +26,8 @@
     <NuGetPackageImportStamp>
     </NuGetPackageImportStamp>
     <TargetFrameworkProfile />
-    
+    <ApplicationInsightsResourceId>/subscriptions/39255e7c-f76c-4cfa-967f-526bd656224e/resourcegroups/BIMOneInternals/providers/microsoft.insights/components/Aggregator.WebHooks</ApplicationInsightsResourceId>
+    <ApplicationInsightsAnnotationResourceId>/subscriptions/39255e7c-f76c-4cfa-967f-526bd656224e/resourcegroups/BIMOneInternals/providers/microsoft.insights/components/Aggregator.WebHooks</ApplicationInsightsAnnotationResourceId>
   </PropertyGroup>
   <PropertyGroup Condition="'$(Configuration)|$(Platform)' == 'Debug|AnyCPU'">
     <DebugSymbols>true</DebugSymbols>
@@ -72,7 +73,12 @@
     <!-- packages -->
   </ItemGroup>
   <ItemGroup>
-    
+    <PackageReference Include="Microsoft.ApplicationInsights.TraceListener">
+      <Version>2.6.4</Version>
+    </PackageReference>
+    <PackageReference Include="Microsoft.ApplicationInsights.Web">
+      <Version>2.6.4</Version>
+    </PackageReference>
     <PackageReference Include="Microsoft.AspNet.WebApi.Client" Version="5.2.3" />
     <PackageReference Include="Microsoft.AspNet.WebApi.Core" Version="5.2.3" />
     <PackageReference Include="Microsoft.AspNet.WebApi.WebHost" Version="5.2.3" />
@@ -125,6 +131,7 @@
     <Content Include="apiapp.json" />
     <None Include="app.config" />
     <Content Include="App_Data\HelloWorld.policies" />
+    <Content Include="Connected Services\Application Insights\ConnectedService.json" />
     <None Include="Properties\PublishProfiles\GlassLewisTfsProfile.pubxml" />
     <None Include="Properties\PublishProfiles\LocalFolderProfile.pubxml" />
     <None Include="README.md" />
