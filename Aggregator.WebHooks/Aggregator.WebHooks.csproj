@@ -132,6 +132,7 @@
     <None Include="app.config" />
     <Content Include="App_Data\HelloWorld.policies" />
     <Content Include="Connected Services\Application Insights\ConnectedService.json" />
+    <Content Include="ApplicationInsights.config" />
     <None Include="Properties\PublishProfiles\GlassLewisTfsProfile.pubxml" />
     <None Include="Properties\PublishProfiles\LocalFolderProfile.pubxml" />
     <None Include="README.md" />
