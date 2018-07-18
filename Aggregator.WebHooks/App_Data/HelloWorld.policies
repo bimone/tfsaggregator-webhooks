@@ -9,7 +9,7 @@
     <authentication personalToken="24j57xeqoirljarypqlts3oj7lh5pgcceh6ay7zdd2tct3zxmb4q" />
   </runtime>
 
-  <rule name="SetUserStoryParentRule" appliesTo="User Story">
+  <rule name="SaveUserStory" appliesTo="User Story">
           <![CDATA[  
 logger.Log("Self ID : s{0}", self["ID"]);
 logger.Log("Self TYPE : s{0}", self.TypeName);        
@@ -46,7 +46,7 @@ if(self.HasParent())
 
 
 
-  <rule name="CalculateTotalStoryPointsForFeature" appliesTo="Feature">
+  <rule name="SaveFeature" appliesTo="Feature">
     <![CDATA[  
 logger.Log("Self ID : s{0}", self["ID"]);
 logger.Log("Self TYPE : s{0}", self.TypeName);        
@@ -79,8 +79,8 @@ string parentTitle = "";
 
 
   <policy name="AlwaysRunPolicy">
-    <ruleRef name="SetUserStoryParentRule" />
-    <ruleRef name="CalculateTotalStoryPointsForFeature" />
+    <ruleRef name="SaveUserStory" />
+    <ruleRef name="SaveFeature" />
   </policy>
 
 </AggregatorConfiguration>
