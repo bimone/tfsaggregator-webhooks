@@ -51,27 +51,23 @@ if(self.HasParent())
 logger.Log("Self ID : s{0}", self["ID"]);
 logger.Log("Self TYPE : s{0}", self.TypeName);        
 string parentTitle = "";
+var totalField = self.Fields["BIMOneAgile.TotalStoryPoints"] ;
+int totalpoints = 0;
 
-    
-    var totalEffort = 0;
-    
-    foreach(var child in self.Children.Where(child => child.TypeName == "User Story"))
-    {
-        var pointsField = child["Story Points"];
-        if(pointsField != null)
-        {                
-            int points;
-            if(int.TryParse(pointsField.ToString(), out points))
-            {
-                totalEffort += points;
-            }
+foreach(var child in self.Children.Where(child => child.TypeName == "User Story"))
+{
+    var pointsField = child["Story Points"];
+    if(pointsField != null)
+    {                
+        int points;
+        if(int.TryParse(pointsField.ToString(), out points))
+        {
+            totalpoints += points;
         }
     }
-    
-    if(self["Total Story Points"] == null)
-    {      
-        self["Total Story Points"] = totalEffort;
-    }    
+}
+self["BIMOneAgile.TotalStoryPoints"] = totalpoints;
+logger.Log("Points : {0}" ,self["BIMOneAgile.TotalStoryPoints"]);
 
   ]]>
   </rule>
