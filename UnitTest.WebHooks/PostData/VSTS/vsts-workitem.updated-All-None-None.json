@@ -1,112 +1,193 @@
 {
-    "subscriptionId": "701bfa24-5bd3-4c62-865d-9e443d5e462a",
-    "notificationId": 14,
-    "id": "e6812110-770b-41f9-b853-7421ca3cd4ad",
-    "eventType": "workitem.updated",
-    "publisherId": "tfs",
-    "message": null,
-    "detailedMessage": null,
-    "resource": {
-        "id": 3,
-        "workItemId": 12,
-        "rev": 3,
-        "revisedBy": {
-            "id": "859dfcc2-d96d-4cd0-8bc1-d3a9570e5b5c",
-            "name": "Giulio Vian (Dev AAD) <giulio.dev@casavian.eu>",
-            "displayName": "Giulio Vian (Dev AAD)",
-            "url": "https://app.vssps.visualstudio.com/Ad42bf46b-f950-454c-b2aa-0cce857edf5a/_apis/Identities/859dfcc2-d96d-4cd0-8bc1-d3a9570e5b5c",
-            "uniqueName": "giulio.dev@casavian.eu",
-            "imageUrl": "https://giuliovaad.visualstudio.com/_api/_common/identityImage?id=859dfcc2-d96d-4cd0-8bc1-d3a9570e5b5c"
-        },
-        "revisedDate": "9999-01-01T00:00:00Z",
-        "fields": {
-            "System.Rev": {
-                "oldValue": 2,
-                "newValue": 3
-            },
-            "System.AuthorizedDate": {
-                "oldValue": "2018-03-24T10:19:17.81Z",
-                "newValue": "2018-03-24T10:21:23.767Z"
-            },
-            "System.RevisedDate": {
-                "oldValue": "2018-03-24T10:21:23.767Z",
-                "newValue": "9999-01-01T00:00:00Z"
-            },
-            "System.ChangedDate": {
-                "oldValue": "2018-03-24T10:19:17.81Z",
-                "newValue": "2018-03-24T10:21:23.767Z"
-            },
-            "System.Watermark": {
-                "oldValue": 31,
-                "newValue": 32
-            },
-            "System.Description": {
-                "oldValue": ".",
-                "newValue": ".."
-            }
-        },
-        "_links": {
-            "self": {
-                "href": "https://giuliovaad.visualstudio.com/_apis/wit/workItems/12/updates/3"
-            },
-            "workItemUpdates": {
-                "href": "https://giuliovaad.visualstudio.com/_apis/wit/workItems/12/updates"
-            },
-            "parent": {
-                "href": "https://giuliovaad.visualstudio.com/_apis/wit/workItems/12"
-            },
-            "html": {
-                "href": "https://giuliovaad.visualstudio.com/web/wi.aspx?pcguid=1fe04a90-6116-437a-a208-f64a7711e8ff&id=12"
-            }
-        },
-        "url": "https://giuliovaad.visualstudio.com/_apis/wit/workItems/12/updates/3",
-        "revision": {
-            "id": 12,
-            "rev": 3,
-            "fields": {
-                "System.AreaPath": "WorkItemTracking",
-                "System.TeamProject": "WorkItemTracking",
-                "System.IterationPath": "WorkItemTracking\\Iteration 1",
-                "System.WorkItemType": "Task",
-                "System.State": "New",
-                "System.Reason": "New",
-                "System.CreatedDate": "2018-03-24T10:10:22.98Z",
-                "System.CreatedBy": "Giulio Vian (Dev AAD) <giulio.dev@casavian.eu>",
-                "System.ChangedDate": "2018-03-24T10:21:23.767Z",
-                "System.ChangedBy": "Giulio Vian (Dev AAD) <giulio.dev@casavian.eu>",
-                "System.Title": "t2",
-                "Microsoft.VSTS.Common.StateChangeDate": "2018-03-24T10:10:22.98Z",
-                "Microsoft.VSTS.Common.Priority": 2,
-                "System.Description": ".."
-            },
-            "_links": {
-                "self": {
-                    "href": "https://giuliovaad.visualstudio.com/_apis/wit/workItems/12/revisions/3"
-                },
-                "workItemRevisions": {
-                    "href": "https://giuliovaad.visualstudio.com/_apis/wit/workItems/12/revisions"
-                },
-                "parent": {
-                    "href": "https://giuliovaad.visualstudio.com/bed2988e-11a5-4705-9f9e-0738963940cf/_apis/wit/workItems/12"
-                }
-            },
-            "url": "https://giuliovaad.visualstudio.com/_apis/wit/workItems/12/revisions/3"
+  "subscriptionId": "68315668-ae15-4cba-90c6-cc0349a9828f",
+  "notificationId": 7304,
+  "id": "60284aef-22d7-4ea0-8237-987f94c7a8f3",
+  "eventType": "workitem.updated",
+  "publisherId": "tfs",
+  "message": {
+    "text": "Bug #6299 (PROD - Viewer - La visionneuse n'affiche pas le point de vue quand on change de question) transitioned to Ready for Prod by Jonathan Dubé\r\n(https://bimoneonline.visualstudio.com/web/wi.aspx?pcguid=f3d3e05c-83c4-402b-83e8-13170759f0a7&id=6299)",
+    "html": "<a href=\"https://bimoneonline.visualstudio.com/web/wi.aspx?pcguid=f3d3e05c-83c4-402b-83e8-13170759f0a7&amp;id=6299\">Bug #6299</a> (PROD - Viewer - La visionneuse n&#39;affiche pas le point de vue quand on change de question) transitioned to Ready for Prod by Jonathan Dub&#233;",
+    "markdown": "[Bug #6299](https://bimoneonline.visualstudio.com/web/wi.aspx?pcguid=f3d3e05c-83c4-402b-83e8-13170759f0a7&id=6299) (PROD - Viewer - La visionneuse n'affiche pas le point de vue quand on change de question) transitioned to Ready for Prod by Jonathan Dubé"
+  },
+  "detailedMessage": {
+    "text": "Bug #6299 (PROD - Viewer - La visionneuse n'affiche pas le point de vue quand on change de question) transitioned to Ready for Prod by Jonathan Dubé\r\n(https://bimoneonline.visualstudio.com/web/wi.aspx?pcguid=f3d3e05c-83c4-402b-83e8-13170759f0a7&id=6299)\r\n\r\n- New State: Ready for Prod\r\n",
+    "html": "<a href=\"https://bimoneonline.visualstudio.com/web/wi.aspx?pcguid=f3d3e05c-83c4-402b-83e8-13170759f0a7&amp;id=6299\">Bug #6299</a> (PROD - Viewer - La visionneuse n&#39;affiche pas le point de vue quand on change de question) transitioned to Ready for Prod by Jonathan Dub&#233;<ul>\r\n<li>New State: Ready for Prod</li></ul>",
+    "markdown": "[Bug #6299](https://bimoneonline.visualstudio.com/web/wi.aspx?pcguid=f3d3e05c-83c4-402b-83e8-13170759f0a7&id=6299) (PROD - Viewer - La visionneuse n'affiche pas le point de vue quand on change de question) transitioned to Ready for Prod by Jonathan Dubé\r\n\r\n* New State: Ready for Prod\r\n"
+  },
+  "resource": {
+    "id": 14,
+    "workItemId": 6299,
+    "rev": 14,
+    "revisedBy": {
+      "id": "0b6ac00b-fac0-67a0-9fb6-72106e54a1b4",
+      "name": "Jonathan Dubé <jonathan.dube@bimone.com>",
+      "displayName": "Jonathan Dubé",
+      "url": "https://app.vssps.visualstudio.com/Ab7416863-dc56-4669-8c35-b42ec8f45486/_apis/Identities/0b6ac00b-fac0-67a0-9fb6-72106e54a1b4",
+      "_links": {
+        "avatar": {
+          "href": "https://bimoneonline.visualstudio.com/_apis/GraphProfile/MemberAvatars/aad.MGI2YWMwMGItZmFjMC03N2EwLTlmYjYtNzIxMDZlNTRhMWI0"
         }
+      },
+      "uniqueName": "jonathan.dube@bimone.com",
+      "imageUrl": "https://bimoneonline.visualstudio.com/_api/_common/identityImage?id=0b6ac00b-fac0-67a0-9fb6-72106e54a1b4",
+      "descriptor": "aad.MGI2YWMwMGItZmFjMC03N2EwLTlmYjYtNzIxMDZlNTRhMWI0"
     },
-    "resourceVersion": "1.0",
-    "resourceContainers": {
-        "collection": {
-            "id": "1fe04a90-6116-437a-a208-f64a7711e8ff",
-            "baseUrl": "https://giuliovaad.visualstudio.com/"
+    "revisedDate": "9999-01-01T00:00:00Z",
+    "fields": {
+      "System.Rev": {
+        "oldValue": 13,
+        "newValue": 14
+      },
+      "System.AuthorizedDate": {
+        "oldValue": "2018-07-17T20:21:46.443Z",
+        "newValue": "2018-07-18T11:31:38.593Z"
+      },
+      "System.RevisedDate": {
+        "oldValue": "2018-07-18T11:31:38.593Z",
+        "newValue": "9999-01-01T00:00:00Z"
+      },
+      "System.State": {
+        "oldValue": "PeerValidation Successful",
+        "newValue": "Ready for Prod"
+      },
+      "System.Reason": {
+        "oldValue": "Moved out of state Peer Validation",
+        "newValue": "Moved out of state PeerValidation Successful"
+      },
+      "System.ChangedDate": {
+        "oldValue": "2018-07-17T20:21:46.443Z",
+        "newValue": "2018-07-18T11:31:38.593Z"
+      },
+      "System.ChangedBy": {
+        "oldValue": "Vincent Cartier <vincent.cartier@bimone.com>",
+        "newValue": "Jonathan Dubé <jonathan.dube@bimone.com>"
+      },
+      "System.AuthorizedAs": {
+        "oldValue": "Vincent Cartier <vincent.cartier@bimone.com>",
+        "newValue": "Jonathan Dubé <jonathan.dube@bimone.com>"
+      },
+      "System.PersonId": {
+        "oldValue": 31231206,
+        "newValue": 29667301
+      },
+      "System.Watermark": {
+        "oldValue": 51512,
+        "newValue": 51595
+      },
+      "Microsoft.VSTS.Common.StateChangeDate": {
+        "oldValue": "2018-07-17T20:21:46.443Z",
+        "newValue": "2018-07-18T11:31:38.593Z"
+      }
+    },
+    "_links": {
+      "self": {
+        "href": "https://bimoneonline.visualstudio.com/f813f89c-b69c-413a-af26-08909600fc73/_apis/wit/workItems/6299/updates/14"
+      },
+      "workItemUpdates": {
+        "href": "https://bimoneonline.visualstudio.com/f813f89c-b69c-413a-af26-08909600fc73/_apis/wit/workItems/6299/updates"
+      },
+      "parent": {
+        "href": "https://bimoneonline.visualstudio.com/f813f89c-b69c-413a-af26-08909600fc73/_apis/wit/workItems/6299"
+      },
+      "html": {
+        "href": "https://bimoneonline.visualstudio.com/web/wi.aspx?pcguid=f3d3e05c-83c4-402b-83e8-13170759f0a7&id=6299"
+      }
+    },
+    "url": "https://bimoneonline.visualstudio.com/f813f89c-b69c-413a-af26-08909600fc73/_apis/wit/workItems/6299/updates/14",
+    "revision": {
+      "id": 6299,
+      "rev": 14,
+      "fields": {
+        "System.AreaPath": "BIMOne\\BIMTrack",
+        "System.TeamProject": "BIMOne",
+        "System.IterationPath": "BIMOne\\BIM Track\\Backlog\\BT-14",
+        "System.WorkItemType": "Bug",
+        "System.State": "Ready for Prod",
+        "System.Reason": "Moved out of state PeerValidation Successful",
+        "System.AssignedTo": "Jonathan Dubé <jonathan.dube@bimone.com>",
+        "System.CreatedDate": "2018-07-16T19:15:40.14Z",
+        "System.CreatedBy": "Vincent Cartier <vincent.cartier@bimone.com>",
+        "System.ChangedDate": "2018-07-18T11:31:38.593Z",
+        "System.ChangedBy": "Jonathan Dubé <jonathan.dube@bimone.com>",
+        "System.Title": "PROD - Viewer - La visionneuse n'affiche pas le point de vue quand on change de question",
+        "Microsoft.VSTS.Common.Priority": 2,
+        "Microsoft.VSTS.Common.StateChangeDate": "2018-07-18T11:31:38.593Z",
+        "Microsoft.VSTS.Common.Severity": "3 - Medium",
+        "Microsoft.VSTS.Common.ValueArea": "Business",
+        "Microsoft.VSTS.Common.ActivatedDate": "2018-07-17T14:27:10.36Z",
+        "Microsoft.VSTS.Common.ActivatedBy": "Jonathan Dubé <jonathan.dube@bimone.com>",
+        "Microsoft.VSTS.Scheduling.CompletedWork": 3.75,
+        "Microsoft.VSTS.Common.StackRank": 1997000546.0,
+        "BIMOneAgile-Testingpurpose.Environment": "Production",
+        "BIMOneAgile-Testingpurpose.CanReproduce": false,
+        "BIMOneAgile-Testingpurpose.ReportedBy": "Other",
+        "BIMOneAgile-Testingpurpose.CreatedOn": "2018-07-16T19:08:29.677Z",
+        "BIMOneAgile-Testingpurpose.WorkaroundAvailable": false,
+        "BIMOneAgile.BugType": "Functional",
+        "System.Description": "Quand on est dans une question alors qu'on a un modèle d'affiché, si on clique sur les flèches gauche et droite, la question change mais pas l'affichage de la question dans le modèle",
+        "Microsoft.VSTS.TCM.ReproSteps": "<span style=\"text-decoration-line:underline;\">Étapes:</span><div><ol><li>Ouvrir un projet qui contient des modèles, des questions, des conflits et des points de vue associés</li><li>Cliquer sur Visionneuse</li><li>Afficher un modèle</li><li>Cliquer sur Questions</li><li>Afficher tous les points de vue et les conflits</li><li>Cliquer sur une question, la visionneuse s'ajuste en focntione du point de vue et du conflit</li><li>Cliquer sur la flèche gauche ou droite pour change de question</li><li>La visionneuse n'affiche pas le nouveau point de vue et le nouveau conflit</li></ol></div><div><br></div><div><span style=\"text-decoration-line:underline;\">Comportement voulu:</span></div><div>La visionneuse devrait afficher le nouveau point de vue et le nouveau conflit</div><div><br></div>"
+      },
+      "relations": [
+        {
+          "rel": "System.LinkTypes.Hierarchy-Reverse",
+          "url": "https://bimoneonline.visualstudio.com/f813f89c-b69c-413a-af26-08909600fc73/_apis/wit/workItems/6241",
+          "attributes": {
+            "isLocked": false
+          }
         },
-        "account": {
-            "id": "d42bf46b-f950-454c-b2aa-0cce857edf5a",
-            "baseUrl": "https://giuliovaad.visualstudio.com/"
+        {
+          "rel": "ArtifactLink",
+          "url": "vstfs:///Git/Commit/f813f89c-b69c-413a-af26-08909600fc73%2ff88ea4d3-49ab-4f78-8d2a-b687cc974683%2f02fb130091f4cb920c7e3d0c526110e45f6865a3",
+          "attributes": {
+            "authorizedDate": "2018-07-17T17:52:21.28Z",
+            "id": 622052,
+            "resourceCreatedDate": "2018-07-17T17:52:21.28Z",
+            "resourceModifiedDate": "2018-07-17T17:52:21.28Z",
+            "revisedDate": "9999-01-01T00:00:00Z",
+            "name": "Fixed in Commit"
+          }
         },
-        "project": {
-            "id": "bed2988e-11a5-4705-9f9e-0738963940cf",
-            "baseUrl": "https://giuliovaad.visualstudio.com/"
+        {
+          "rel": "ArtifactLink",
+          "url": "vstfs:///Git/PullRequestId/f813f89c-b69c-413a-af26-08909600fc73%2ff88ea4d3-49ab-4f78-8d2a-b687cc974683%2f784",
+          "attributes": {
+            "authorizedDate": "2018-07-17T17:53:25.23Z",
+            "id": 622053,
+            "resourceCreatedDate": "2018-07-17T17:53:25.23Z",
+            "resourceModifiedDate": "2018-07-17T17:53:25.23Z",
+            "revisedDate": "9999-01-01T00:00:00Z",
+            "name": "Pull Request"
+          }
         }
+      ],
+      "_links": {
+        "self": {
+          "href": "https://bimoneonline.visualstudio.com/f813f89c-b69c-413a-af26-08909600fc73/_apis/wit/workItems/6299/revisions/14"
+        },
+        "workItemRevisions": {
+          "href": "https://bimoneonline.visualstudio.com/f813f89c-b69c-413a-af26-08909600fc73/_apis/wit/workItems/6299/revisions"
+        },
+        "parent": {
+          "href": "https://bimoneonline.visualstudio.com/f813f89c-b69c-413a-af26-08909600fc73/_apis/wit/workItems/6299"
+        }
+      },
+      "url": "https://bimoneonline.visualstudio.com/f813f89c-b69c-413a-af26-08909600fc73/_apis/wit/workItems/6299/revisions/14"
+    }
+  },
+  "resourceVersion": "1.0",
+  "resourceContainers": {
+    "collection": {
+      "id": "f3d3e05c-83c4-402b-83e8-13170759f0a7",
+      "baseUrl": "https://bimoneonline.visualstudio.com/"
     },
-    "createdDate": "2018-03-24T10:21:26.2901896Z"
+    "account": {
+      "id": "b7416863-dc56-4669-8c35-b42ec8f45486",
+      "baseUrl": "https://bimoneonline.visualstudio.com/"
+    },
+    "project": {
+      "id": "f813f89c-b69c-413a-af26-08909600fc73",
+      "baseUrl": "https://bimoneonline.visualstudio.com/"
+    }
+  },
+  "createdDate": "2018-07-18T11:31:43.7607746Z"
 }

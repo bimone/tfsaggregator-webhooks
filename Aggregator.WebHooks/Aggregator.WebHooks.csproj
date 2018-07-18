@@ -9,7 +9,7 @@
     <ProductVersion>
     </ProductVersion>
     <SchemaVersion>2.0</SchemaVersion>
-    <ProjectGuid>{E017A788-AAE8-4F29-B677-04E175ABF5FE}</ProjectGuid>
+    <ProjectGuid>{E017A788-AAE8-4F29-B677-04E175ABF5FE}</ProjectGuid>    
     <ProjectTypeGuids>{349c5851-65df-11da-9384-00065b846f21};{fae04ec0-301f-11d3-bf4b-00c04f79efbc}</ProjectTypeGuids>
     <OutputType>Library</OutputType>
     <AppDesignerFolder>Properties</AppDesignerFolder>
@@ -73,6 +73,12 @@
     <!-- packages -->
   </ItemGroup>
   <ItemGroup>
+    <PackageReference Include="Microsoft.ApplicationInsights.EtwCollector">
+      <Version>2.6.4</Version>
+    </PackageReference>
+    <PackageReference Include="Microsoft.ApplicationInsights.EventSourceListener">
+      <Version>2.6.4</Version>
+    </PackageReference>
     <PackageReference Include="Microsoft.ApplicationInsights.TraceListener">
       <Version>2.6.4</Version>
     </PackageReference>
@@ -133,6 +139,7 @@
     <Content Include="App_Data\HelloWorld.policies" />
     <Content Include="Connected Services\Application Insights\ConnectedService.json" />
     <Content Include="ApplicationInsights.config" />
+    <None Include="Properties\PublishProfiles\BIMOneTFSAggregator - Web Deploy.pubxml" />
     <None Include="Properties\PublishProfiles\GlassLewisTfsProfile.pubxml" />
     <None Include="Properties\PublishProfiles\LocalFolderProfile.pubxml" />
     <None Include="README.md" />
