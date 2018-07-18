@@ -23,18 +23,18 @@ if(self.HasParent())
     
     var totalEffort = 0;
     
-        foreach(var child in self.Parent.Children.Where(child => child.TypeName == "User Story"))
-        {
-            var pointsField = child["Story Points"];
-            if(pointsField != null)
-            {                
-                int points;
-                if(int.TryParse(pointsField.ToString(), out points))
-                {
-                    totalEffort += points;
-                }
+    foreach(var child in self.Parent.Children.Where(child => child.TypeName == "User Story"))
+    {
+        var pointsField = child["Story Points"];
+        if(pointsField != null)
+        {                
+            int points;
+            if(int.TryParse(pointsField.ToString(), out points))
+            {
+                totalEffort += points;
             }
         }
+    }
     
     if(parent["Total Story Points"] != null)
     {
@@ -42,12 +42,45 @@ if(self.HasParent())
     }
     self["Parent Name"] = parentTitle;
 }
-  ]]></rule>           
+  ]]></rule>
+
+
+
+  <rule name="CalculateTotalStoryPointsForFeature" appliesTo="Feature">
+    <![CDATA[  
+logger.Log("Self ID : s{0}", self["ID"]);
+logger.Log("Self TYPE : s{0}", self.TypeName);        
+string parentTitle = "";
+
+    
+    var totalEffort = 0;
+    
+    foreach(var child in self.Children.Where(child => child.TypeName == "User Story"))
+    {
+        var pointsField = child["Story Points"];
+        if(pointsField != null)
+        {                
+            int points;
+            if(int.TryParse(pointsField.ToString(), out points))
+            {
+                totalEffort += points;
+            }
+        }
+    }
+    
+    if(self["Total Story Points"] == null)
+    {      
+        self["Total Story Points"] = totalEffort;
+    }    
+
+  ]]>
+  </rule>
 
 
 
   <policy name="AlwaysRunPolicy">
     <ruleRef name="SetUserStoryParentRule" />
+    <ruleRef name="CalculateTotalStoryPointsForFeature" />
   </policy>
 
 </AggregatorConfiguration>
